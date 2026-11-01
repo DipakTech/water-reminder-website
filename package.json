@@ -1,0 +1,13 @@
+{
+  "name": "water-reminder-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name water-reminder --branch main --force"
+  },
+  "devDependencies": { "wrangler": "4.156.0" }
+}

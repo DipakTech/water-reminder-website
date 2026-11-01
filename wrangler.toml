@@ -1,0 +1,7 @@
+name = "water-reminder"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+
+[[r2_buckets]]
+binding = "DOWNLOADS"
+bucket_name = "water-reminder-downloads"

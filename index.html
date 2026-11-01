@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#14110f">
+  <meta name="description" content="A little water. A better day. Water Reminder is your quiet Windows desktop companion for gentle reminders, daily hydration goals, and useful insights. Free, offline, and account-free.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Water Reminder — A little water. A better day.">
+  <meta property="og:description" content="Stay in your flow. We'll remember the water. A free, local-first hydration companion for your Windows desktop.">
+  <meta property="og:image" content="/assets/screenshots/overview.webp">
+  <title>Water Reminder — A little water. A better day.</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/SpaceGrotesk-600.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3C10 7 5 11 5 15a7 7 0 0 0 14 0c0-4-5-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="m3 5 8-1v7H3Zm10-1 8-1v8h-8ZM3 13h8v7l-8-1Zm10 0h8v8l-8-1Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 3v17h17M8 15l4-5 4 2 5-7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></symbol>
+    <symbol id="i-command" viewBox="0 0 24 24"><path d="M8 8h8v8H8Zm0 0H5a3 3 0 1 1 3-3Zm8 0V5a3 3 0 1 1 3 3Zm0 8h3a3 3 0 1 1-3 3Zm-8 0v3a3 3 0 1 1-3-3Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 10 7-10 7Z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 20c-4 1-4-2-6-2m14 4v-4a3.5 3.5 0 0 0-1-3c3-.4 6-1.5 6-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2S19.4 2.2 16 4a11 11 0 0 0-8 0C4.6 2.2 3.4 2.6 3.4 2.6a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 2 9c0 4.5 3 5.6 6 6a3.5 3.5 0 0 0-1 3v4"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="Water Reminder home"><img src="assets/icon.svg" width="30" height="30" alt=""><span>water<span class="brand-muted">reminder</span><span class="brand-period">.</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#features">Features</a><a href="#showcase">A closer look</a><a href="#stories">The daily ritual</a><a href="#faq">FAQs</a></nav>
+      <a class="button button-small nav-download" href="#download">Get the app <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#features">Features</a><a href="#showcase">A closer look</a><a href="#stories">The daily ritual</a><a href="#faq">FAQs</a><a href="#download">Download for Windows</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero grid-background">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <a class="release-pill" href="#showcase"><span class="live-dot"></span> YOUR NEW DESKTOP COMPANION <span class="pill-version">v2.0 <svg class="icon"><use href="#i-arrow"/></svg></span></a>
+        <h1>A little water.<br>A <span class="orange">better day.</span><span class="heading-spark" aria-hidden="true">✳</span></h1>
+        <p class="hero-description">Deep in your work? We’ll remember the water.<br>Gentle reminders. Small sips. A healthier daily rhythm.</p>
+        <div class="hero-actions"><a class="button primary" href="#download"><svg class="icon windows"><use href="#i-windows"/></svg> Download for Windows <svg class="icon"><use href="#i-download"/></svg></a><a class="button secondary" href="#showcase"><svg class="icon"><use href="#i-play"/></svg> See it in action</a></div>
+        <p class="hero-fineprint"><span>Free to use</span><span>No account needed</span><span>Works offline</span></p>
+        <div class="hero-product reveal" data-reveal>
+          <div class="product-halo" aria-hidden="true"></div>
+          <div class="app-window"><div class="window-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span><svg class="icon"><use href="#i-drop"/></svg> WATER REMINDER <span class="window-version">/ YOUR DAILY RHYTHM</span></span><span class="window-status"><i class="live-dot"></i> LOCAL FIRST</span></div><img class="hero-screenshot" src="assets/screenshots/overview.webp" alt="The actual Water Reminder desktop dashboard with daily hydration progress, glass sizes, next reminder and a weekly chart. Sample intake data." width="1440" height="1040" fetchpriority="high"></div>
+          <div class="floating-note"><span class="note-icon"><svg class="icon"><use href="#i-bell"/></svg></span><div><span class="note-app">WATER REMINDER <span>just now</span></span><strong>A little pause. A little water.</strong><span>Your next good habit is one sip away.</span></div><span class="notification-dot"></span></div>
+          <span class="product-caption">REAL APP. SAMPLE DATA. A LITTLE MORE INTENTION.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="Product principles"><div class="container"><span><svg class="icon"><use href="#i-windows"/></svg> Made for Windows</span><span><svg class="icon"><use href="#i-lock"/></svg> Your data stays yours</span><span><svg class="icon"><use href="#i-spark"/></svg> Small app. Thoughtful details.</span><span><svg class="icon"><use href="#i-drop"/></svg> One glass at a time</span></div></section>
+
+    <section class="section container" id="features">
+      <div class="section-heading reveal" data-reveal><div><span class="eyebrow"><span></span> LESS FRICTION. MORE FLOW.</span><h2>Good habits.<br>Without the mental tabs.</h2></div><p>You have enough to keep track of.<br>Let your desktop take care of the little reminders.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card reminder-feature reveal" data-reveal><span class="feature-icon"><svg class="icon"><use href="#i-bell"/></svg></span><h3>A nudge, not an interruption.</h3><p>Set your interval and active hours. Snooze when you’re busy. Let reminders fit around your day.</p><div class="reminder-demo"><div class="demo-label"><span><i class="live-dot"></i> YOUR NEXT WATER BREAK</span><span>DEMO</span></div><div class="demo-countdown"><span id="demo-minutes">29</span><span class="countdown-colon">:</span><span id="demo-seconds">59</span><small>MIN</small></div><div class="reminder-track"><span></span></div><div class="demo-footer"><span>YOUR PACE. YOUR SCHEDULE.</span><svg class="icon"><use href="#i-sun"/></svg></div></div></article>
+        <article class="feature-card progress-feature reveal" data-reveal><span class="feature-icon"><svg class="icon"><use href="#i-drop"/></svg></span><h3>Every sip adds up.</h3><p>Your own goal. Your favorite glass. Log a drink and turn a small moment into visible progress.</p><div class="progress-demo"><div class="demo-ring"><svg viewBox="0 0 160 160" aria-hidden="true"><circle class="ring-base" cx="80" cy="80" r="65"/><circle class="ring-progress" id="demo-ring-progress" cx="80" cy="80" r="65"/></svg><div><strong id="demo-percent">75<span>%</span></strong><span>OF YOUR DAILY GOAL</span></div></div><button class="sip-button" id="sip-button"><svg class="icon"><use href="#i-drop"/></svg> Try logging 250 ml <span>+</span></button><span class="demo-result" id="demo-result" role="status" aria-live="polite">Illustrative demo · 1,500 / 2,000 ml</span></div></article>
+        <article class="feature-card insights-feature reveal" data-reveal><span class="feature-icon"><svg class="icon"><use href="#i-chart"/></svg></span><h3>See the habit taking shape.</h3><p>Weekly trends, personal streaks, and an activity calendar. A clearer picture of your daily rhythm.</p><div class="mini-chart" aria-label="Illustrative seven-day hydration chart"><div class="chart-top"><span>THE BIGGER PICTURE</span><span>7 DAYS <svg class="icon"><use href="#i-chevron"/></svg></span></div><div class="bars"><div><i style="--bar:45%"></i><span>M</span></div><div><i style="--bar:70%"></i><span>T</span></div><div><i style="--bar:56%"></i><span>W</span></div><div><i style="--bar:85%"></i><span>T</span></div><div><i style="--bar:64%"></i><span>F</span></div><div><i style="--bar:100%"></i><span>S</span></div><div><i style="--bar:75%"></i><span>S</span></div></div><span class="chart-caption">A LITTLE MORE CONSISTENT, ONE DAY AT A TIME.</span></div></article>
+        <article class="feature-card compact-feature reveal" data-reveal><span class="feature-icon"><svg class="icon"><use href="#i-command"/></svg></span><div><h3>Keep your hands in the flow.</h3><p>Log a glass with <kbd>D</kbd>. Find anything with <kbd>Ctrl</kbd> <kbd>K</kbd>. Your next sip is a shortcut away.</p></div></article>
+        <article class="feature-card compact-feature reveal" data-reveal><span class="feature-icon"><svg class="icon"><use href="#i-lock"/></svg></span><div><h3>Personal means private.</h3><p>No account. No cloud sync. Your history lives on your computer, with CSV and JSON exports when you need them.</p></div></article>
+      </div>
+    </section>
+
+    <section class="showcase-section" id="showcase"><div class="container section">
+      <div class="center-heading reveal" data-reveal><span class="eyebrow"><span></span> A LITTLE SPACE FOR YOURSELF</span><h2>Thoughtful on the inside, too.</h2><p>Everything you need to find your rhythm. Nothing in the way.</p></div>
+      <div class="showcase-tabs" role="tablist" aria-label="Desktop app screens"><button id="tab-overview" class="showcase-tab" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0" data-screen="overview"><svg class="icon"><use href="#i-drop"/></svg> Overview</button><button id="tab-insights" class="showcase-tab" role="tab" aria-selected="false" aria-controls="panel-insights" tabindex="-1" data-screen="insights"><svg class="icon"><use href="#i-chart"/></svg> Insights</button><button id="tab-reminders" class="showcase-tab" role="tab" aria-selected="false" aria-controls="panel-reminders" tabindex="-1" data-screen="reminders"><svg class="icon"><use href="#i-bell"/></svg> Reminders</button><button id="tab-light" class="showcase-tab" role="tab" aria-selected="false" aria-controls="panel-light" tabindex="-1" data-screen="light"><svg class="icon"><use href="#i-sun"/></svg> Light mode</button></div>
+      <div class="showcase-frame">
+        <div role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0"><img src="assets/screenshots/overview.webp" width="1440" height="1040" loading="lazy" alt="Water Reminder overview in Ember dark mode, showing a daily goal, progress ring, quick log controls and weekly intake chart."><div class="screen-caption"><strong>Your day, at a glance.</strong><span>Your daily goal, quick drink logging, and the next reminder in one calm space.</span></div></div>
+        <div role="tabpanel" id="panel-insights" aria-labelledby="tab-insights" tabindex="0" hidden><img src="assets/screenshots/insights.webp" width="1440" height="1040" loading="lazy" alt="Actual Insights screen showing a seven-day intake chart, consistency, streaks, and an activity calendar."><div class="screen-caption"><strong>The little things become a pattern.</strong><span>Explore 7- and 30-day trends, streaks, and your personal activity calendar.</span></div></div>
+        <div role="tabpanel" id="panel-reminders" aria-labelledby="tab-reminders" tabindex="0" hidden><img src="assets/screenshots/reminders.webp" width="1440" height="1040" loading="lazy" alt="Actual Reminders screen with interval controls, active hours, pause, snooze and stop-at-goal settings."><div class="screen-caption"><strong>A routine that works around you.</strong><span>Choose your interval, set quiet hours, and stop reminders when you meet your goal.</span></div></div>
+        <div role="tabpanel" id="panel-light" aria-labelledby="tab-light" tabindex="0" hidden><img src="assets/screenshots/light.webp" width="1440" height="1040" loading="lazy" alt="Water Reminder dashboard in its warm, bright Ember light theme with the same daily progress and quick logging features."><div class="screen-caption"><strong>Find your brighter side.</strong><span>Ember dark, Ember light, or a theme that follows your system.</span></div></div>
+      </div><p class="screenshot-note">Captured from Water Reminder v2.0 · Sample data shown</p>
+    </div></section>
+
+    <section class="section container ritual-section" id="stories">
+      <div class="section-heading reveal" data-reveal><div><span class="eyebrow"><span></span> MADE FOR THE EVERYDAY</span><h2>Big work.<br>Small rituals.</h2></div><p>A quiet companion for people who lose track<br>of time doing what they love.</p></div>
+      <div class="story-grid">
+        <article class="story-card reveal" data-reveal><span class="story-stars" aria-hidden="true">✳ ✳ ✳ ✳ ✳</span><blockquote>“One less thing to keep in my head when I’m deep in a project.”</blockquote><div class="story-person"><span class="avatar avatar-one"><svg class="icon"><use href="#i-command"/></svg></span><div><strong>For the deep-work days</strong><span>Illustrative testimonial</span></div><span class="quote-mark" aria-hidden="true">”</span></div></article>
+        <article class="story-card reveal" data-reveal><span class="story-stars" aria-hidden="true">✳ ✳ ✳ ✳ ✳</span><blockquote>“I like a little progress I can actually see. One glass at a time.”</blockquote><div class="story-person"><span class="avatar avatar-two"><svg class="icon"><use href="#i-chart"/></svg></span><div><strong>For the habit builders</strong><span>Illustrative testimonial</span></div><span class="quote-mark" aria-hidden="true">”</span></div></article>
+        <article class="story-card reveal" data-reveal><span class="story-stars" aria-hidden="true">✳ ✳ ✳ ✳ ✳</span><blockquote>“A simple reminder, a quick shortcut, and I’m right back in my flow.”</blockquote><div class="story-person"><span class="avatar avatar-three"><svg class="icon"><use href="#i-spark"/></svg></span><div><strong>For the wonderfully busy</strong><span>Illustrative testimonial</span></div><span class="quote-mark" aria-hidden="true">”</span></div></article>
+      </div><p class="testimonial-note">A preview of the testimonial section. These are illustrative quotes, not customer reviews.</p>
+    </section>
+
+    <section class="section container faq-section" id="faq"><div class="faq-intro reveal" data-reveal><span class="eyebrow"><span></span> A FEW MORE THINGS</span><h2>Good questions.<br>Simple answers.</h2><p>A small app should be simple<br>to get to know.</p><span class="faq-decoration" aria-hidden="true"><svg><use href="#i-drop"/></svg></span></div><div class="faq-list">
+      <details open><summary>Is Water Reminder really free?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>Yes. The desktop app is free to use. There’s no subscription, sign-up, or account to create. Just download it and find your rhythm.</p></details>
+      <details><summary>Which computers does it work on?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>This download is the Windows desktop edition. Extract the entire ZIP, keep its files together, and open Water Reminder.exe. macOS and Linux downloads are not currently offered.</p></details>
+      <details><summary>Will it remind me when I close the window?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>Yes. Closing the window keeps Water Reminder running in your system tray. Click the tray icon to reopen it, or choose Quit Water Reminder from its menu to stop the app. Windows notification and Focus Assist settings can affect notification delivery.</p></details>
+      <details><summary>Where does my hydration data go?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>It stays on your computer. The desktop app works offline, uses no account, and stores your intake history locally. You can export your history as CSV or save a complete JSON backup in Settings.</p></details>
+      <details><summary>Can I change my goal and reminder schedule?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>Absolutely. Set a personal daily goal, choose your default glass size, switch between ml and US fl oz, and adjust reminder intervals and active hours. You can pause, snooze, or stop reminders once you reach your goal.</p></details>
+      <details><summary>Does it have a command line interface?<svg class="icon"><use href="#i-chevron"/></svg></summary><p>Yes. The desktop app and CLI share your intake history and preferences. The packaged Windows download opens the desktop app directly. Running the CLI from source additionally requires Node.js and the application source.</p></details>
+    </div></section>
+
+    <section class="download-section container" id="download"><div class="download-card grid-background reveal" data-reveal><div class="download-glow" aria-hidden="true"></div><span class="download-drop" aria-hidden="true"><svg><use href="#i-drop"/></svg></span><span class="eyebrow">ONE SMALL THING. EVERY DAY.</span><h2>Your next good habit<br>starts with <span class="orange">a sip.</span></h2><p>A little more water. A little more intention.<br>Make room for yourself, right on your desktop.</p><a id="download-button" class="button primary" href="#download-status" aria-describedby="download-status"><svg class="icon windows"><use href="#i-windows"/></svg><span id="download-label">Download for Windows</span><svg class="icon"><use href="#i-download"/></svg></a><p class="download-meta"><span data-version>v2.0.0</span><span>Windows desktop</span><span>Free. Always yours.</span></p><p class="download-status" id="download-status" role="status">The Windows download will be available here when the release is published.</p><div class="install-steps"><span><b>01</b> Download the ZIP</span><svg class="icon"><use href="#i-arrow"/></svg><span><b>02</b> Extract the full folder</span><svg class="icon"><use href="#i-arrow"/></svg><span><b>03</b> Open Water Reminder.exe</span></div></div></section>
+  </main>
+  <footer class="footer container"><div><a class="brand" href="#"><img src="assets/icon.svg" width="28" height="28" alt=""><span>water<span class="brand-muted">reminder</span><span class="brand-period">.</span></span></a><p>Small sips. Lasting habits.</p></div><div class="footer-links"><a href="#features">Features</a><a href="#faq">FAQs</a><a href="#download">Download <svg class="icon"><use href="#i-arrow"/></svg></a><a id="source-link" hidden href="#">GitHub <svg class="icon"><use href="#i-github"/></svg></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Water Reminder</span><span>MADE FOR A HEALTHIER DAILY RHYTHM <span class="orange">✳</span></span><a href="#">Back to top ↑</a></div></footer>
+</body>
+</html>
