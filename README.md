@@ -2,8 +2,9 @@
 
 The HTML, CSS, and vanilla JavaScript landing page for Water Reminder desktop.
 
-- Website: https://water-reminder-8je.pages.dev
-- Windows download: https://water-reminder-8je.pages.dev/download
+- Website: https://water.oneclickresult.com
+- Windows download: https://water.oneclickresult.com/download
+- Cloudflare Pages fallback: https://water-reminder-8je.pages.dev
 - Source: https://github.com/DipakTech/water-reminder-website
 
 ## Architecture
@@ -45,10 +46,10 @@ Set repository variables:
 
 | Variable | Value |
 | --- | --- |
-| `DOWNLOAD_URL` | `https://water-reminder-8je.pages.dev/download` |
-| `SITE_URL` | `https://water-reminder-8je.pages.dev` |
+| `DOWNLOAD_URL` | `https://water.oneclickresult.com/download` |
+| `SITE_URL` | `https://water.oneclickresult.com` |
 
-The account ID secret and both variables have been configured. **A scoped `CLOUDFLARE_API_TOKEN` is required to enable unattended deployment.** Wrangler's local OAuth login is not a CI credential. Create the token in [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens), then save it using GitHub repository Settings → Secrets and variables → Actions, or:
+Both secrets and both variables are configured. The token is named `water-reminder-website GitHub Actions`, grants only **Cloudflare Pages: Edit**, and is restricted to the Cloudflare account containing this project. Its value is stored as an encrypted GitHub Actions secret. Wrangler's local OAuth login is separate from this CI credential. To rotate the token, create a replacement in [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens), then save it using GitHub repository Settings → Secrets and variables → Actions, or:
 
 ```sh
 gh secret set CLOUDFLARE_API_TOKEN --repo DipakTech/water-reminder-website
@@ -66,7 +67,7 @@ npx wrangler login
 npm run deploy
 ```
 
-`wrangler.toml` declares the existing `water-reminder` Pages project and its `DOWNLOADS` R2 binding. The project's assigned public hostname is `water-reminder-8je.pages.dev`.
+`wrangler.toml` declares the existing `water-reminder` Pages project and its `DOWNLOADS` R2 binding. The production custom domain is `water.oneclickresult.com`, with a CNAME pointing to the assigned Pages hostname `water-reminder-8je.pages.dev`. Attach the domain to the Pages project before configuring that DNS record. The built canonical URL, sitemap, and download URL use the custom domain.
 
 ## Publishing a new desktop release
 
